@@ -1,23 +1,46 @@
-# Cyber-Threat-Checker
+Summarization of the project 
 
-A cybersecurity project built with PowerShell and Python to collect endpoint artifacts and analyse remote IP addresses using the VirusTotal API.
+This instrument serves two main purposes: 
 
-## What it does
-- Collects running processes and TCP connections
-- Exports collected artifacts to JSON
-- Extracts remote IP addresses
-- Checks IP reputation using VirusTotal
-- Generates a JSON analysis report
+1\. Powershell Component 
 
-## Technologies
-- PowerShell
-- Python
-- VirusTotal API
-- JSON
-- REST APIs
+Collates artifacts from the system: 
 
-## Project files
-- `collect_artifacts.ps1` – collects endpoint process and network data
-- `analyze_artifacts.py` – analyses the collected artifacts and queries VirusTotal
-- `analysis_report.json` – sample output from the project
-- `project_report.docx` – project documentation
+Active process and network (TCP) connections 
+
+JSON file called sample\_data/artifacts stores the collected information. 
+
+\- Indicates: 
+
+\- pipelines and cmdlets (`Get-Process, Get-NetTCPConnection`) 
+
+Personal PowerShell objects; property filtering and selection 
+
+Network and process audits: forensic investigation 
+
+2\. Python Sect. 
+
+Reads the PowerShell-produced JSON file, identifies unique remote IP addresses, and confirms each IP using the VirusTotal Threat Intelligence API. 
+
+Generates a report: 
+
+\- The result in JSON format (`reports/analysis\_report.json`) 
+
+The terminal summary of the analyst 
+
+\- Shows: 
+
+Data structures comprise dictionaries, sets, and lists. 
+
+Conditionals and loops 
+
+JSON parsing and file input/output 
+
+Managing mistakes—try/except 
+
+Requests are the external library calls. 
+
+Use of the true security API, VirusTotal 
+
+--
+

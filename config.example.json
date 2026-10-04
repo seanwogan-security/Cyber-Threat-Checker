@@ -1,0 +1,7 @@
+{
+  "virustotal_api_key": "YOUR_API_KEY_HERE",
+  "input_artifacts_path": "../sample_data/artifacts.json",
+  "output_report_path": "../reports/analysis_report.json",
+  "max_ips_to_check": 20,
+  "request_timeout_seconds": 15
+}
